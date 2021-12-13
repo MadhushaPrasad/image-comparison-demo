@@ -48,6 +48,12 @@
         $('#diff').html(html.join(''));
       }
      
+      $('igl').on('click', function () {
+        control.ignoreLess();
+      });
+      $('igc').on('click', function () {
+        control.ignoreColors();
+      });
     </script>
   </body>
 </html>
