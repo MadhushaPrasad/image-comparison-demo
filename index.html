@@ -35,6 +35,9 @@
       $('#file2').on('change', function () {
         file2 = this.files[0];
       });
+      $('button').on('click', function () {
+        control = resemble(file1).compareTo(file2).onComplete(onComplete);
+      });
     </script>
   </body>
 </html>
